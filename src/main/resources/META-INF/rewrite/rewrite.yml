@@ -39,11 +39,6 @@ recipeList:
       newMethodName: selectFrom
       ignoreDefinition: true
       matchOverrides: true
-#  - org.openrewrite.java.ChangeMethodName:
-#      methodPattern: com.mysema.query.jpa.JPAQueryBase list(..)
-#      newMethodName: fetch
-#      ignoreDefinition: true
-#      matchOverrides: true
   - org.openrewrite.recipe.querydsl.ChangeJPAQueryListToFetch
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: com.mysema.query.jpa.impl.JPAQuery
